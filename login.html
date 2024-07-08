@@ -76,12 +76,12 @@
         event.preventDefault();
         let username = document.getElementById('username').value;
         let password = document.getElementById('password').value;
-        performLogin(username, password);
-        displayUserProfile();
+        login(username, password);
     });
 
-    function performLogin(username, password) {
-        alert(`Username: ${username}, Password: ${password}`);
+    function login(username, password) {
+        alert(`Username: ${username}, Password: ${password} 
+        Login effettuato con successo`);
         const user = {
             username: username,
             name: 'Federica',
